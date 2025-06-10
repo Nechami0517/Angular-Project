@@ -1,0 +1,14 @@
+<mat-card appearance="outlined">
+    <mat-card-content>
+        <div class="lesson" 
+        [ngClass]="{'started':isLessonStarted}">
+            <h3>{{ lesson?.lessonName}}</h3>
+            <h4>{{ lesson?.teacherName }}</h4>
+            <h4>{{ lesson?.numberOfSessions }}</h4>
+            <h4>{{ lesson?.time }}</h4>
+            <h4>{{ lesson?.startDate }}</h4>
+            <h4>{{ lesson?.day }}</h4>
+            <h4>{{ lesson?.price }}</h4>
+          </div>
+    </mat-card-content>
+  </mat-card>

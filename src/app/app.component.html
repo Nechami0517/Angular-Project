@@ -1,0 +1,13 @@
+
+<nav>
+    <a routerLink="login" routerLinkActive="active">login</a>
+    <a 
+      [class.disabled]="role === 'מזכירת רישום'" 
+      routerLink="lesson-list" 
+      routerLinkActive="active">lesson-list</a>
+    <a 
+      [class.disabled]="role === 'מורה להתעמלות'" 
+      routerLink="registered" 
+      routerLinkActive="active">registered</a>
+</nav>
+<router-outlet></router-outlet>

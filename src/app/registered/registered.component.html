@@ -1,0 +1,12 @@
+<h1>רשימת נרשמים</h1>
+<ag-grid-angular
+  style="width: 99vw;"
+   
+  class="ag-theme-alpine"
+  [rowData]="rowData"
+  [columnDefs]="columnDefs"
+  [pagination]="true"
+    [paginationPageSize]="12"
+  [domLayout]="'autoHeight'" 
+  (gridReady)="onGridReady($event)">
+</ag-grid-angular>

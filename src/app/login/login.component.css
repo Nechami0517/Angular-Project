@@ -1,0 +1,23 @@
+body, html {
+    height: 100%; /* גובה מלא של העמוד */
+    margin: 0; /* הסרת רווחים */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center; /* מרכז את התוכן אופקית */
+    align-items: center; /* מרכז את התוכן אנכית */
+    height: 100%; /* גובה מלא של העמוד */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column; /* שדות אחד מתחת לשני */
+    width: 300px; /* רוחב קבוע לטופס */
+  }
+  
+  /* סגנון עבור שדות הקלט */
+  mat-form-field {
+    width: 100%; /* שדה הקלט יתפוס את הרוחב המלא */
+    margin-bottom: 16px; /* רווח בין השדות */
+  }

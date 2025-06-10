@@ -1,0 +1,46 @@
+mat-card {
+    border: 1px solid #0672CB; /* כחול כהה */
+    border-radius: 12px; /* פינות מעוגלות */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* צל קל */
+    margin: 10px;
+    padding: 15px;
+    background-color: #d0f0fd; /* רקע תכלת */
+    transition: transform 0.2s, box-shadow 0.2s; /* אפקט מעבר חלק */
+}
+
+mat-card:hover {
+    transform: scale(1.03); /* זום קל בהובר */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* צל מוגבר בהובר */
+}
+
+mat-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.lesson h3 {
+    font-size: 1.5rem;
+    color: #0672CB; /* כחול כהה לכותרת */
+    margin-bottom: 10px;
+}
+
+.lesson h4 {
+    font-size: 1rem;
+    color: #4a4a4a; /* אפור כהה לפרטים */
+    margin: 5px 0;
+}
+
+.lesson {
+    padding: 10px;
+    background-color: #ffffff; /* רקע לבן לתוכן השיעור */
+    border-radius: 8px;
+    width: 100%;
+}
+
+.lesson.started {
+    background-color: #5e8b98; /* רקע ירוק בהיר לשיעור שהתחיל */
+    border: 2px solid #0672CB; /* מסגרת כחולה כהה */
+    font-weight: bold; /* טקסט מודגש */
+}

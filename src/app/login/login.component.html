@@ -1,0 +1,20 @@
+<div class="container">
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <mat-form-field>
+        <mat-label>שם</mat-label>
+        <input id="userName" matInput type="text" formControlName="userName">
+        <div *ngIf="loginForm.get('userName')!.invalid && loginForm.get('userName')!.touched">
+          <small>שם משתמש חייב להיות באורך מינימלי של 3 תווים</small>
+        </div>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>סיסמא</mat-label>
+        <input id="password" matInput type="password" formControlName="password">
+        <div *ngIf="loginForm.get('password')!.invalid && loginForm.get('password')!.touched">
+          <small>הסיסמא חייבת להיות באורך מינימלי של 6 תווים</small>
+        </div>
+      </mat-form-field>
+    
+      <button mat-raised-button color="primary" type="submit">Submit</button>
+  </form>
+</div>

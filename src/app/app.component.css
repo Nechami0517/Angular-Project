@@ -1,0 +1,36 @@
+nav {
+    display: flex; /* שימוש ב-Flexbox */
+    justify-content: center; /* ממרכז את הקישורים */
+    align-items: center; /* ממרכז את הקישורים אנכית */
+    background-color: #d0f0fd; /* צבע רקע תכלת */
+    padding: 15px; /* רווח פנימי */
+    border-radius: 8px; /* פינות מעוגלות */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* צל קל */
+    margin-bottom: 20px; /* רווח מתחת לניווט */
+}
+
+nav a {
+    text-decoration: none; /* הסרת קו תחתון */
+    color: #007acc; /* צבע טקסט כחול */
+    font-size: 1.2rem; /* גודל טקסט */
+    margin: 0 15px; /* רווח בין הקישורים */
+    padding: 10px 15px; /* רווח פנימי */
+    border-radius: 5px; /* פינות מעוגלות */
+    transition: background-color 0.3s ease, color 0.3s ease; /* אפקט מעבר */
+}
+
+nav a:hover {
+    background-color: #007acc; /* צבע רקע כחול כהה */
+    color: white; /* צבע טקסט לבן */
+}
+
+nav a.active {
+    font-weight: bold; /* טקסט מודגש לקישור פעיל */
+    border-bottom: 2px solid #007acc; /* קו תחתון לקישור פעיל */
+}
+nav a.disabled {
+    pointer-events: none; /* מבטל לחיצה */
+    color: gray; /* משנה את הצבע לאפור */
+    text-decoration: none; /* מסיר קו תחתון */
+    cursor: not-allowed; /* מציג סמן עכבר של "לא מורשה" */
+}

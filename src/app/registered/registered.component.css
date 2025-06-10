@@ -1,0 +1,7 @@
+
+h1 {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 20px; /* Add some space from the top of the page */
+    font-size: 2rem; /* Adjust the font size for better visibility */
+    color: #4a4a4a; /* Optional: Set a nice color for the heading */
+}
